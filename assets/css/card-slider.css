@@ -1,0 +1,19 @@
+.card-slider {
+  position: relative;
+}
+
+@media(min-width: 1920px) {
+  .card-slider {
+    text-align: center;
+  }
+}
+
+.card-slider img {
+  width: 100%;
+}
+
+@media(min-width: 650px) {
+  .card-slider img {
+    width: initial;
+  }
+}

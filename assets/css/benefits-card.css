@@ -1,0 +1,53 @@
+.benefits-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 483px;
+  min-height: 248px;
+  margin: 0 auto;
+
+  border: 1px solid rgba(164, 37, 37, 0.3);
+  transition: all 0.3s;
+}
+
+@media(min-width: 850px) {
+  .benefits-card {
+    margin: 0;
+  }
+}
+
+.benefits-card__img {
+  width: 120px;
+  height: 95px;
+  margin-bottom: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .benefits-card__img {
+    margin-bottom: 38px;
+  }
+}
+
+.benefits-card__descr {
+  font-weight: 700;
+  /* font-size: 28px; */
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-black);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .benefits-card__descr {
+    font-size: 28px;
+  }
+}

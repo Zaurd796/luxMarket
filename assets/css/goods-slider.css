@@ -1,0 +1,31 @@
+.goods-slider {
+  position: relative;
+}
+
+@media(min-width: 1920px) {
+  .goods-slider__item {
+    max-width: 1490px;
+  }
+}
+
+.goods-slider .swiper__buttons {
+  top: 39%;
+}
+
+@media(min-width: 1920px) {
+  .goods-slider .swiper__buttons {
+    top: 32%;
+  }
+}
+
+.goods-slider .swiper__prev {
+  margin-left: -8px;
+
+  color: var(--color-black);
+}
+
+.goods-slider .swiper__next {
+  margin-right: -8px;
+
+  color: var(--color-black);
+}

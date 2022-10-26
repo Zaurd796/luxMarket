@@ -1,0 +1,49 @@
+.catalog-main__card {
+  margin-bottom: 55px;
+}
+
+.catalog-main__features {
+  margin-bottom: 40px;
+
+  background-color: var(--color-mercury);
+}
+
+.catalog-main__goods {
+  margin-bottom: 75px;
+}
+
+.catalog-main__comments {
+  margin-bottom: 5%;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .catalog-main__comments {
+    margin-bottom: 111px;
+  }
+}
+
+.catalog-main__accessories {
+  margin-bottom: 5%;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .catalog-main__accessories {
+    margin-bottom: 112px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .catalog-main .articles {
+    padding: 61px 0 125px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .catalog-main .benefits {
+    padding: 199px 0 129px;
+  }
+}

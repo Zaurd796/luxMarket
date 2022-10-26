@@ -1,0 +1,42 @@
+.swiper__buttons {
+  position: absolute;
+  top: calc(50% - 30px);
+  z-index: 20;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.swiper__prev,
+.swiper__next {
+  font-size: 30px;
+  color: var(--color-white);
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+
+  .swiper__prev,
+  .swiper__next {
+    font-size: 40px;
+    color: var(--color-black);
+  }
+}
+
+.swiper__prev::before,
+.swiper__next::before {
+  margin: 0;
+}
+
+.swiper__prev:hover,
+.swiper__next:hover {
+  opacity: 0.6;
+}
+
+.swiper__prev:active,
+.swiper__next:active {
+  opacity: 0.3;
+}

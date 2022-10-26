@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>market</title>
+
+  <!--  Шрифты -->
+  <link rel="stylesheet" href="/assets/fonts/robotoFlex/style.css">
+
+
+  <!--  Базовые стили сайта -->
+  <link rel="stylesheet" href="/vendor/html5-boilerplate_v8.0.0/css/normalize.css">
+  <link rel="stylesheet" href="/vendor/swiper-bundle.css">
+  <link rel="stylesheet" href="/assets/fonts/fontello/css/fontello.css">
+
+  <!--  Стили шаблона. Лучше описывать в одном файле-->
+  <link rel="stylesheet" href="/assets/css/template_styles.css">
+
+  <!--  Стили страницы -->
+  <link rel="stylesheet" href="/assets/css/catalog-main.css">
+  <link rel="stylesheet" href="/assets/css/card.css">
+  <link rel="stylesheet" href="/assets/css/card-slider.css">
+  <link rel="stylesheet" href="/assets/css/swiper.css">
+  <link rel="stylesheet" href="/assets/css/product-card.css">
+  <link rel="stylesheet" href="/assets/css/stars.css">
+  <link rel="stylesheet" href="/assets/css/description.css">
+  <link rel="stylesheet" href="/assets/css/features.css">
+  <link rel="stylesheet" href="/assets/css/goods.css">
+  <link rel="stylesheet" href="/assets/css/goods-slider.css">
+  <link rel="stylesheet" href="/assets/css/goods-card.css">
+  <link rel="stylesheet" href="/assets/css/title.css">
+  <link rel="stylesheet" href="/assets/css/comments.css">
+  <link rel="stylesheet" href="/assets/css/accessories.css">
+  <link rel="stylesheet" href="/assets/css/articles.css">
+  <link rel="stylesheet" href="/assets/css/article-card.css">
+  <link rel="stylesheet" href="/assets/css/benefits.css">
+  <link rel="stylesheet" href="/assets/css/benefits-list.css">
+  <link rel="stylesheet" href="/assets/css/benefits-card.css">
+
+  <script src="/assets/js/swiper-bundle.js"></script>
+  <script src="/assets/js/main.js"></script>
+</head>
+
+<body>
+  <div id="panel"></div>
+  <div class="site">
+    <header class="site__header">
+      <div class="site-header">
+        <div class="site-header__top">
+          <div class="container">
+            <div class="site-header__top-inner">
+              <div class="site-header__logo">
+                <span class="logo">
+                  <img class="logo__img" src="/assets/images/logo.png" alt="logo">
+                </span>
+              </div>
+              <div class="site-header__content">
+                <div class="site-header__top-content">
+                  <div class="site-header__content-promo">
+                    <div class="site-header-promo">
+                      <div class="icon-clock"></div>
+                      <span class="site-header-promo__text">Акции</span>
+                    </div>
+                  </div>
+                  <div class="site-header__form">
+                    <form class="form" action="#">
+                      <input class="form__input" type="search" name="search">
+                      <button class="form__button icon-search" type="submit"></button>
+                    </form>
+                  </div>
+                  <div class="site-header__top-links">
+                    <div class="site-header__toggle">
+                      <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="site-header__user">
+                      <div class="icon-user"></div>
+                    </div>
+                    <div class="site-header__like">
+                      <div class="icon-heart"></div>
+                    </div>
+                    <div class="site-header__cart">
+                      <div class="icon-basket"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="site-header__bottom-content">
+                  <nav class="site-header__nav">
+                    <ul class="general-nav">
+                      <li class="general-nav__item">
+                        <a class="general-nav__link" href="#">О компании</a>
+                      </li>
+                      <li class="general-nav__item">
+                        <a class="general-nav__link" href="#">Новости</a>
+                      </li>
+                      <li class="general-nav__item">
+                        <a class="general-nav__link" href="#">Контакты</a>
+                      </li>
+                      <li class="general-nav__item">
+                        <a class="general-nav__link" href="#">Доставка</a>
+                      </li>
+                      <li class="general-nav__item">
+                        <a class="general-nav__link" href="#">Подключение</a>
+                      </li>
+                      <li class="general-nav__item">
+                        <a class="general-nav__link" href="#">Сервис</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="site-header__phone">
+                    <a class="phone" href="tel:+74959999999">
+                      <span class="icon-phone"></span>
+                      <span class="phone__num">+7 (495) 999 99 99</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-header__middle">
+          <div class="container">
+            <div class="site-header__middle-inner">
+              <div class="site-header__middle-link-box">
+                <a class="site-header__middle-link" href="#">Каталог</a>
+              </div>
+              <div class="site-header-slider">
+                <div class="swiper site-header-slider__content">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">ASKO</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Bora</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Fhiaba</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Franke</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Gaggenau</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Kuppersbusch</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Liebherr</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Neff</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Smeg</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">SUB-ZERO</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">V-ZUG</a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="swiper__link" href="#">Wolf</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="site-header-slider__arrow icon-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-header__bottom">
+          <div class="site-header__bottom-box">
+            <a class="site-header__bottom-link" href="#">
+              Специальное предложение на холодильники liebherr <span>-20%</span> <span>действует до 12 июня</span>
+            </a>
+          </div>
+          <div class="site-header__bottom-box">
+            <a class="site-header__bottom-link" href="#">
+              Комплекты бытовой техники Smeg по специальным ценам
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site__main">
+      <div class="catalog-main">
+        <div class="catalog-main__card">
+          <div class="container">
+            <div class="card">
+              <div class="card__left-col">
+                <ul class="card__left-col-list">
+                  <li class="card__left-col__item">
+                    <img class="card__left-col__img" src="/assets/images/card-1.png" width="179" alt="карточка">
+                  </li>
+                  <li class="card__left-col__item">
+                    <img class="card__left-col__img" src="/assets/images/card-2.png" width="179" alt="карточка">
+                  </li>
+                  <li class="card__left-col__item">
+                    <img class="card__left-col__img" src="/assets/images/card-3.png" width="179" alt="карточка">
+                  </li>
+                </ul>
+              </div>
+              <div class="card__card-slider">
+                <div class="card-slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/assets/images/card-slider.png" width="455" alt="шкаф кухонный">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/images/card-slider.png" width="455" alt="шкаф кухонный">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/images/card-slider.png" width="455" alt="шкаф кухонный">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper__buttons">
+                    <div class="swiper__prev icon-left"></div>
+                    <div class="swiper__next icon-right"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__right-col">
+                <div class="card__right-col__descr">Код товара: 1003 0233</div>
+                <div class="product-card">
+                  <a class="product-card__link" href="#">
+                    <h3 class="product-card__title">
+                      Духовой шкаф <span>Gaggenau BOP250102</span>
+                    </h3>
+                  </a>
+                  <div class="product-card__stars">
+                    <div class="stars">
+                      <div class="stars__list">
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                        <div class="icon-star"></div>
+                      </div>
+                      <span class="stars__descr">4.9</span>
+                      <a class="stars__reviews" href="#">3 отзыва</a>
+                    </div>
+                  </div>
+                  <div class="product-card__content">
+                    <span class="product-card__price">99 999 ₽</span>
+                    <div class="product-card__content__links">
+                      <div class="product-card__cart">
+                        <div class="icon-basket"></div>
+                      </div>
+                      <div class="product-card__like">
+                        <div class="icon-heart"></div>
+                      </div>
+                      <div class="product-card__toggle">
+                        <div class="toggle">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <dl>
+                  <div>
+                    <dt>Тип духовки:</dt>
+                    <dd>независимая</dd>
+                  </div>
+                  <div>
+                    <dt>Способ подключения:</dt>
+                    <dd>электрический</dd>
+                  </div>
+                  <div>
+                    <dt>Габариты, ВхШхГ (см):</dt>
+                    <dd>59.5х59х54.7</dd>
+                  </div>
+                  <div>
+                    <dt>Мощность подключения (кВт):</dt>
+                    <dd>3.7</dd>
+                  </div>
+                  <div>
+                    <dt>Объем (л):</dt>
+                    <dd>76</dd>
+                  </div>
+                  <div>
+                    <dt>Тип управления:</dt>
+                    <dd>электронное</dd>
+                  </div>
+                  <div>
+                    <dt>Число режимов работы:</dt>
+                    <dd>13</dd>
+                  </div>
+                  <div>
+                    <dt>Конвекция:</dt>
+                    <dd>Есть</dd>
+                  </div>
+                  <div>
+                    <dt>Очистка духовки:</dt>
+                    <dd>пиролитическая</dd>
+                  </div>
+                </dl>
+                <a href="#">Все характеристики</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main__description">
+          <div class="container">
+            <div class="description">
+              <div class="description__col-1">
+                <h3>Код товара</h3>
+                <span>1003 0233</span>
+              </div>
+              <div class="description__col-2">
+                <h3>О Модели</h3>
+                <p>
+                  Духовой шкаф с пиролитической очисткой и каталитическим фильтром для очистки воздуха. Вы можете
+                  комбинировать 13 режимов нагрева, настраивать температуру в диапазоне 30-300 градусов. Если вы хотите
+                  сэкономить время, выберите одну из 40 автоматических программ.
+                </p>
+                <h3>О бренде</h3>
+                <p>
+                  Компания Gaggenau, производящая бытовую технику премиум-класса,
+                  в настоящее время является частью немецкого концерна BSH Hausgeräte GmbH (вместе с брендами Bosch и
+                  Siemens).
+                </p>
+                <p>
+                  До включения в эту корпорацию компания имела собственную долгую историю — ее основание относится к
+                  концу 17 века. Сначала мастерская в городке «Гаггенау» занималась изготовлением гвоздей, затем —
+                  сельскохозяйственного оборудования. В 1880 году ей была создана фирменная особо прочная эмаль, которой
+                  стали покрывать внутренние стенки духовок.
+                </p>
+                <p>
+                  Собственное производство бытовой техники было запущено в 30-е годы 20 века, причем предпочтение
+                  отдавалось устройствам для приготовления пищи — газовым, угольным, а затем и электрическим плитам.
+                  Позже компания начала выпускать встраиваемую технику — встроенные на уровне глаз духовки, независимые
+                  варочные панели и вытяжки. Именно здесь была изготовлена первая духовка шириной 90 см с приготовлением
+                  на 4 уровнях.
+                </p>
+                <p>
+                  Уже в 21 веке разработана и внедрена модульная система встраивания бытовой техники и совместная
+                  установка приборов в колонну.
+                </p>
+              </div>
+              <div class="description__col-3">
+                <h3>Преимущества</h3>
+                <p>Таймер с отключением</p>
+                <p>Защита от детей</p>
+                <p>
+                  Управление с поворотными регуляторами и дисплеем встраиваемые электрические приборы не комплектуются
+                  вилкой для подключения к электрической сети
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main__features">
+          <div class="container">
+            <div class="features">
+              <h3>Все характеристики</h3>
+              <div class="features__inner">
+                <dl>
+                  <div>
+                    <dt>Тип духовки:</dt>
+                    <dd>независимая</dd>
+                  </div>
+                  <div>
+                    <dt>Способ подключения:</dt>
+                    <dd>электрический</dd>
+                  </div>
+                  <div>
+                    <dt>Габариты, ВхШхГ (см):</dt>
+                    <dd>59.5х59х54.7</dd>
+                  </div>
+                  <div>
+                    <dt>Мощность подключения (кВт):</dt>
+                    <dd>3.7</dd>
+                  </div>
+                  <div>
+                    <dt>Объем (л):</dt>
+                    <dd>76</dd>
+                  </div>
+                  <div>
+                    <dt>Тип управления:</dt>
+                    <dd>электронное</dd>
+                  </div>
+                  <div>
+                    <dt>Число режимов работы:</dt>
+                    <dd>13</dd>
+                  </div>
+                  <div>
+                    <dt>Конвекция:</dt>
+                    <dd>Есть</dd>
+                  </div>
+                  <div>
+                    <dt>Очистка духовки:</dt>
+                    <dd>пиролитическая</dd>
+                  </div>
+                  <div>
+                    <dt>Тип духовки:</dt>
+                    <dd>независимая</dd>
+                  </div>
+                  <div>
+                    <dt>Способ подключения:</dt>
+                    <dd>электрический</dd>
+                  </div>
+                  <div>
+                    <dt>Габариты, ВхШхГ (см):</dt>
+                    <dd>59.5х59х54.7</dd>
+                  </div>
+                  <div>
+                    <dt>Мощность подключения (кВт):</dt>
+                    <dd>3.7</dd>
+                  </div>
+                  <div>
+                    <dt>Объем (л):</dt>
+                    <dd>76</dd>
+                  </div>
+                  <div>
+                    <dt>Тип управления:</dt>
+                    <dd>электронное</dd>
+                  </div>
+                  <div>
+                    <dt>Число режимов работы:</dt>
+                    <dd>13</dd>
+                  </div>
+                  <div>
+                    <dt>Конвекция:</dt>
+                    <dd>Есть</dd>
+                  </div>
+                  <div>
+                    <dt>Очистка духовки:</dt>
+                    <dd>пиролитическая</dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div>
+                    <dt>Тип духовки:</dt>
+                    <dd>независимая</dd>
+                  </div>
+                  <div>
+                    <dt>Способ подключения:</dt>
+                    <dd>электрический</dd>
+                  </div>
+                  <div>
+                    <dt>Габариты, ВхШхГ (см):</dt>
+                    <dd>59.5х59х54.7</dd>
+                  </div>
+                  <div>
+                    <dt>Мощность подключения (кВт):</dt>
+                    <dd>3.7</dd>
+                  </div>
+                  <div>
+                    <dt>Объем (л):</dt>
+                    <dd>76</dd>
+                  </div>
+                  <div>
+                    <dt>Тип управления:</dt>
+                    <dd>электронное</dd>
+                  </div>
+                  <div>
+                    <dt>Число режимов работы:</dt>
+                    <dd>13</dd>
+                  </div>
+                  <div>
+                    <dt>Конвекция:</dt>
+                    <dd>Есть</dd>
+                  </div>
+                  <div>
+                    <dt>Очистка духовки:</dt>
+                    <dd>пиролитическая</dd>
+                  </div>
+                  <div>
+                    <dt>Тип духовки:</dt>
+                    <dd>независимая</dd>
+                  </div>
+                  <div>
+                    <dt>Способ подключения:</dt>
+                    <dd>электрический</dd>
+                  </div>
+                  <div>
+                    <dt>Габариты, ВхШхГ (см):</dt>
+                    <dd>59.5х59х54.7</dd>
+                  </div>
+                  <div>
+                    <dt>Мощность подключения (кВт):</dt>
+                    <dd>3.7</dd>
+                  </div>
+                  <div>
+                    <dt>Объем (л):</dt>
+                    <dd>76</dd>
+                  </div>
+                  <div>
+                    <dt>Тип управления:</dt>
+                    <dd>электронное</dd>
+                  </div>
+                  <div>
+                    <dt>Число режимов работы:</dt>
+                    <dd>13</dd>
+                  </div>
+                  <div>
+                    <dt>Конвекция:</dt>
+                    <dd>Есть</dd>
+                  </div>
+                  <div>
+                    <dt>Очистка духовки:</dt>
+                    <dd>пиролитическая</dd>
+                  </div>
+                </dl>
+                <div class="features__box">
+                  <div class="features__box-row-1">
+                    <div class="features__img-box" style="background-image: url('/assets/images/features-1.svg');">
+                    </div>
+                    <div class="features__box-descr">Бесплатная доставка</div>
+                  </div>
+                  <div class="features__box-row-2">
+                    <div class="features__img-box" style="background-image: url('/assets/images/features-2.svg');">
+                    </div>
+                    <div class="features__box-descr">Бесплатное подключение</div>
+                  </div>
+                  <div class="features__box-row-3">
+                    <div class="features__img-box" style="background-image: url('/assets/images/features-3.svg');">
+                    </div>
+                    <div class="features__box-descr">Гарантия 5 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main__goods goods">
+          <div class="goods__title">
+            <div class="container">
+              <h3 class="title">Похожие модели</h3>
+            </div>
+          </div>
+          <div class="goods__slider">
+            <div class="container">
+              <div class="goods-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="goods-card">
+                        <div class="goods-card__img-box">
+                          <a class="goods-card__img-link" href="#">
+                            <img class="goods-card__img" width="291" src="/assets/images/goods-1.png" alt="карточка">
+                          </a>
+                          <div class="goods-card__like icon-heart"></div>
+                        </div>
+                        <a class="goods-card__link" href="#">
+                          <h3 class="goods-card__title">Духовой шкаф <span>Gaggenau</span></h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="goods-card">
+                        <div class="goods-card__img-box">
+                          <a class="goods-card__img-link" href="#">
+                            <img class="goods-card__img" width="297" src="/assets/images/goods-2.png" alt="карточка">
+                          </a>
+                          <div class="goods-card__like icon-heart"></div>
+                        </div>
+                        <a class="goods-card__link" href="#">
+                          <h3 class="goods-card__title">Духовой шкаф <span>Kuppersbusch</span></h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="goods-card">
+                        <div class="goods-card__img-box">
+                          <a class="goods-card__img-link" href="#">
+                            <img class="goods-card__img" width="301" src="/assets/images/goods-3.png" alt="карточка">
+                          </a>
+                          <div class="goods-card__like icon-heart"></div>
+                        </div>
+                        <a class="goods-card__link" href="#">
+                          <h3 class="goods-card__title">
+                            Встраиваемая микроволновая печь <span>Asko</span>
+                          </h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="goods-card">
+                        <div class="goods-card__img-box">
+                          <a class="goods-card__img-link" href="#">
+                            <img class="goods-card__img" width="291" src="/assets/images/goods-1.png" alt="карточка">
+                          </a>
+                          <div class="goods-card__like icon-heart"></div>
+                        </div>
+                        <a class="goods-card__link" href="#">
+                          <h3 class="goods-card__title">Духовой шкаф <span>Gaggenau</span></h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="goods-card">
+                        <div class="goods-card__img-box">
+                          <a class="goods-card__img-link" href="#">
+                            <img class="goods-card__img" width="297" src="/assets/images/goods-2.png" alt="карточка">
+                          </a>
+                          <div class="goods-card__like icon-heart"></div>
+                        </div>
+                        <a class="goods-card__link" href="#">
+                          <h3 class="goods-card__title">Духовой шкаф <span>Kuppersbusch</span></h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="goods-card">
+                        <div class="goods-card__img-box">
+                          <a class="goods-card__img-link" href="#">
+                            <img class="goods-card__img" width="301" src="/assets/images/goods-3.png" alt="карточка">
+                          </a>
+                          <div class="goods-card__like icon-heart"></div>
+                        </div>
+                        <a class="goods-card__link" href="#">
+                          <h3 class="goods-card__title">
+                            Встраиваемая микроволновая печь <span>Asko</span>
+                          </h3>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__buttons">
+                  <div class="swiper__prev icon-left"></div>
+                  <div class="swiper__next icon-right"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main__comments comments">
+          <div class="comments__title">
+            <div class="container">
+              <h3 class="title">Отзывы</h3>
+            </div>
+          </div>
+          <div class="comments__content">
+            <div class="container">
+              <div class="comments__content-inner">
+                <div class="comments__stars">
+                  <div class="stars">
+                    <div class="stars__list">
+                      <div class="icon-star"></div>
+                      <div class="icon-star"></div>
+                      <div class="icon-star"></div>
+                      <div class="icon-star"></div>
+                      <div class="icon-star"></div>
+                    </div>
+                    <span class="stars__descr">4.9</span>
+                  </div>
+                </div>
+                <ul class="comments__list">
+                  <li>
+                    <div>
+                      <span>Светлана 25 апреля 2022</span><br>
+                      <span>5.0</span>
+                    </div>
+                    <div>
+                      <span>Плюсы</span>
+                      <p>Хорошее качество, высокая мощность</p>
+                    </div>
+                    <div>
+                      <span>Минусы</span>
+                      <p>нет</p>
+                    </div>
+                    <div>
+                      <span>Комментарий</span>
+                      <p>
+                        Искали классическую модель духового шкафа, и нашли в этой все, что нам надо. Встал идеально,
+                        подошел к кухне. Приготовление блюд быстрое, настройка и управление очень простые и понятные
+                        даже пожилому человеку. Моется легко, выполнен качественно. Подключение быстрое, все режимы его
+                        уже выучили, разобрались со всем
+                      </p>
+                    </div>
+                    <a href="#">Читать полностью</a>
+                  </li>
+                  <li>
+                    <div>
+                      <span>Евгений 24 января 2022</span><br>
+                      <span>4.0</span>
+                    </div>
+                    <div>
+                      <span>Плюсы</span>
+                      <p>Размер, дизайн, характеристики</p>
+                    </div>
+                    <div>
+                      <span>Минусы</span>
+                      <p>нет</p>
+                    </div>
+                    <div>
+                      <span>Комментарий</span>
+                      <p>
+                        Этот электрический духовой шкаф – классика, имеющая хорошее качество и высокую мощность. Нас в
+                        нем устроило все: размер, дизайн и характеристики. Следует сказать, что дизайн духового шкафа мы
+                        подбирали под дизайн кухни. У нас классический стиль и поэтому он смотрится гармонично. Мы с
+                        мужем очень довольны его мощностью и тем, как быстро и
+                      </p>
+                    </div>
+                    <a href="#">Читать полностью</a>
+                  </li>
+                  <li>
+                    <div>
+                      <span>Кира 10 июня 2021</span><br>
+                      <span>5.0</span>
+                    </div>
+                    <div>
+                      <span>Плюсы</span>
+                      <p>Хорошее качество, высокая мощность</p>
+                    </div>
+                    <div>
+                      <span>Минусы</span>
+                      <p>нет</p>
+                    </div>
+                    <div>
+                      <span>Комментарий</span>
+                      <p>
+                        У нас в семье 4 человека, поэтому переживала сперва, что такой духовой шкаф на 50 л окажется для
+                        нас маловат. Но нет, он оптимален по размерам, в нем получаются очень вкусные и сочные блюда.
+                        Готовлю постоянно, жарить на сковороде категорически не люблю, поэтому качественная духовка -
+                        мое спасение. Управлять им легко, регулирую температурный режим, включаю
+                      </p>
+                    </div>
+                    <a href="#">Читать полностью</a>
+                  </li>
+                </ul>
+                <div class="comments__button">Оставить отзыв</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main__accessories accessories">
+          <div class="accessories__title">
+            <div class="container">
+              <h3 class="title">Аксессуары</h3>
+            </div>
+          </div>
+          <div class="accessories__content">
+            <div class="container">
+              <div class="accessories__list">
+                <div class="accessories__item">
+                  <div class="product-card">
+                    <a class="product-card__img-link" href="#">
+                      <img class="product-card__img" width="255" src="/assets/images/accessories-1.png"
+                        alt="Набор для ухода">
+                    </a>
+                    <a class="product-card__link" href="#">
+                      <h3 class="product-card__title">
+                        Набор для ухода <span>Magic Power</span>
+                      </h3>
+                    </a>
+                    <div class="product-card__content">
+                      <span class="product-card__price">1000 ₽</span>
+                      <div class="product-card__content__links">
+                        <div class="product-card__cart">
+                          <div class="icon-basket"></div>
+                        </div>
+                        <div class="product-card__like">
+                          <div class="icon-heart"></div>
+                        </div>
+                        <div class="product-card__toggle">
+                          <div class="toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accessories__item">
+                  <div class="product-card">
+                    <a class="product-card__img-link" href="#">
+                      <img class="product-card__img" width="308" src="/assets/images/accessories-2.png"
+                        alt="Салфетка из микрофибры">
+                    </a>
+                    <a class="product-card__link" href="#">
+                      <h3 class="product-card__title">
+                        Салфетка из микрофибры <span>Magic Power</span>
+                      </h3>
+                    </a>
+                    <div class="product-card__content">
+                      <span class="product-card__price">500 ₽</span>
+                      <div class="product-card__content__links">
+                        <div class="product-card__cart">
+                          <div class="icon-basket"></div>
+                        </div>
+                        <div class="product-card__like">
+                          <div class="icon-heart"></div>
+                        </div>
+                        <div class="product-card__toggle">
+                          <div class="toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accessories__item">
+                  <div class="product-card">
+                    <a class="product-card__img-link" href="#">
+                      <img class="product-card__img" width="305" src="/assets/images/accessories-3.png"
+                        alt="Чистящее средство">
+                    </a>
+                    <a class="product-card__link" href="#">
+                      <h3 class="product-card__title">
+                        Чистящее средство <span>Magic Power</span>
+                      </h3>
+                    </a>
+                    <div class="product-card__content">
+                      <span class="product-card__price">600 ₽</span>
+                      <div class="product-card__content__links">
+                        <div class="product-card__cart">
+                          <div class="icon-basket"></div>
+                        </div>
+                        <div class="product-card__like">
+                          <div class="icon-heart"></div>
+                        </div>
+                        <div class="product-card__toggle">
+                          <div class="toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-main__articles articles">
+          <div class="articles__title">
+            <div class="container">
+              <h2 class="title">Статьи</h2>
+            </div>
+          </div>
+          <div class="articles__list">
+            <div class="container">
+              <div class="articles__list-inner">
+                <div class="articles__item">
+                  <div class="article-card" style="background-image: url('/assets/images/articles-1.jpg');">
+                    <a class="article-card__link" href="#">
+                      как создать оптимальный климат в доме
+                    </a>
+                  </div>
+                </div>
+                <div class="articles__item">
+                  <div class="article-card" style="background-image: url('/assets/images/articles-2.jpg');">
+                    <a class="article-card__link" href="#">
+                      как правильно приготовленные блюда помогают справиться со стрессом
+                    </a>
+                  </div>
+                </div>
+                <div class="articles__item">
+                  <div class="article-card" style="background-image: url('/assets/images/articles-3.jpg');">
+                    <a class="article-card__link" href="#">
+                      как создать комфорт на кухне и готовить с удовольствием
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-main__benefits benefits">
+          <div class="benefits__bottom">
+            <div class="container">
+              <div class="benefits__list">
+                <ul class="benefits-list">
+                  <li class="benefits-list__item">
+                    <div class="benefits-card">
+                      <div class="benefits-card__img" style="background-image: url('/assets/images/benefits-1.svg');">
+                      </div>
+                      <div class="benefits-card__descr">Бесплатная доставка</div>
+                    </div>
+                  </li>
+                  <li class="benefits-list__item">
+                    <div class="benefits-card">
+                      <div class="benefits-card__img" style="background-image: url('/assets/images/benefits-2.svg');">
+                      </div>
+                      <div class="benefits-card__descr">Быстрая установка</div>
+                    </div>
+                  </li>
+                  <li class="benefits-list__item">
+                    <div class="benefits-card">
+                      <div class="benefits-card__img" style="background-image: url('/assets/images/benefits-3.svg');">
+                      </div>
+                      <div class="benefits-card__descr">Гарантия лучшей цены</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site__footer">
+      <div class="container">
+        <div class="site-footer">
+          <div class="site-footer__logo">
+            <span class="logo">
+              <img class="logo__img" src="/assets/images/logo.png" alt="logo">
+            </span>
+          </div>
+          <div class="site-footer__info">
+            <div class="site-footer__phone">
+              <a class="phone" href="tel:+74959999999">
+                <span class="phone__num">+7 (495) 999 99 99</span>
+              </a>
+            </div>
+            <div class="site-footer__mail">
+              <a class="mail" href="mailto:info@tech.com">
+                <span class="mail__link">info@tech.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="site-footer__links">
+            <ul class="site-footer__links-list">
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Акции и скидки</a>
+              </li>
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Выезд мастера</a>
+              </li>
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Установка</a>
+              </li>
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Сотрудничество</a>
+              </li>
+            </ul>
+            <ul class="site-footer__links-list">
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Сервис-центры</a>
+              </li>
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Возврат и обмен</a>
+              </li>
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="site-footer__links-item">
+                <a class="site-footer__links-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="site-footer__right-col">
+            <div class="site-footer__right-col-top">
+              <a class="icon-vkontakte"></a>
+              <a class="icon-telegram"></a>
+            </div>
+            <div class="site-footer__right-col-bottom">
+              <a class="site-footer__right-col-bottom__link" href="#">
+                <img src="/assets/images/sber-icon.png" alt="сбер">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

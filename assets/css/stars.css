@@ -1,0 +1,46 @@
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars__list {
+  display: flex;
+  margin-right: 10px;
+}
+
+.stars .icon-star {
+  color: var(--color-mexicanRed);
+}
+
+.stars__descr {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+@media(min-width: 600px) {
+  .stars__descr {
+    color: var(--color-black);
+  }
+}
+
+.stars__reviews {
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--color-matisse);
+
+  transition: all 0.3;
+}
+
+.stars__reviews:hover {
+  opacity: 0.6;
+}
+
+.stars__reviews:active {
+  opacity: 0.3;
+}

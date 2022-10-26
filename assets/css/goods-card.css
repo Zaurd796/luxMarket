@@ -1,0 +1,93 @@
+.goods-card {
+  max-width: 475px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goods-card__img-box {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 475px;
+  height: 532px;
+  margin-bottom: 36px;
+
+  background-color: var(--color-mercury);
+}
+
+.goods-card__img-link {
+  display: block;
+
+  transition: all 0.3s;
+}
+
+.goods-card__img-link:hover {
+  opacity: 0.6;
+}
+
+.goods-card__img-link:active {
+  opacity: 0.3;
+}
+
+.goods-card__like {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+
+  font-size: 40px;
+  color: var(--color-mexicanRed);
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.goods-card__like:hover {
+  opacity: 0.6;
+}
+
+.goods-card__like:active {
+  opacity: 0.3;
+}
+
+.goods-card__like::before {
+  margin: 0;
+}
+
+.goods-card__link {
+  text-decoration: none;
+  color: var(--color-black);
+  text-align: center;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .goods-card__link {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+.goods-card__link:hover {
+  opacity: 0.6;
+}
+
+.goods-card__link:active {
+  opacity: 0.3;
+}
+
+.goods-card__title {
+  margin: 0;
+
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.goods-card__link span {
+  color: var(--color-mexicanRed);
+}

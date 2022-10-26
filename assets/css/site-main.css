@@ -1,0 +1,76 @@
+.site-main__sale-box {
+  padding: 7% 0;
+
+  background: linear-gradient(90deg, #2567A4 6.52%, rgba(164, 37, 37, 0.3) 85.94%);
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .site-main__sale-box {
+    padding: 165px 0 170px;
+  }
+}
+
+.site-main__sale {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .site-main__sale {
+    max-width: 1261px;
+    margin: 0 auto;
+
+    font-size: 96px;
+  }
+}
+
+.site-main__discount {
+  padding: 3% 0;
+
+  background: linear-gradient(90deg, #AD8B8B 6.52%, rgba(164, 37, 37, 0.3) 85.94%);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .site-main__discount {
+    padding: 48px 0;
+  }
+}
+
+.site-main__discount-inner {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 800px) {
+  .site-main__discount-inner {
+    font-size: 30px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .site-main__discount-inner {
+    font-size: 48px;
+  }
+}
+
+.site-main__reviews {
+  background-color: var(--color-black);
+}

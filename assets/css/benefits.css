@@ -1,0 +1,36 @@
+.benefits {
+  padding: 5% 0;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .benefits {
+    padding: 61px 0 129px;
+  }
+}
+
+.benefits__title {
+  max-width: 600px;
+  margin-bottom: 20px;
+
+  background-color: var(--color-mexicanRed);
+  clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1920px) {
+  .benefits__title {
+    max-width: 800px;
+    margin-bottom: 80px;
+    padding-left: 146px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .benefits__list {
+    max-width: 1591px;
+    margin: 0 auto;
+  }
+}
